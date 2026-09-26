@@ -1,0 +1,342 @@
+/* ------------------------- */
+/* RESET */
+/* ------------------------- */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#ffffff;
+
+    color:#111;
+
+    font-family:'Inter',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ------------------------- */
+/* NAVIGATION */
+/* ------------------------- */
+
+nav{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:28px 60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:1000;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.65);
+
+    border-bottom:1px solid rgba(0,0,0,.05);
+
+}
+
+
+.logo{
+
+    font-size:22px;
+
+    font-weight:800;
+
+    letter-spacing:-1px;
+
+}
+
+
+nav ul{
+
+    display:flex;
+
+    gap:40px;
+
+    list-style:none;
+
+}
+
+
+nav a{
+
+    color:#111;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    opacity:.45;
+
+}
+
+
+/* ------------------------- */
+/* HERO */
+/* ------------------------- */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 8vw;
+
+}
+
+
+.hero-text{
+
+    max-width:900px;
+
+}
+
+.hero h1{
+
+    font-size:clamp(60px,8vw,120px);
+
+    color: #121212;
+
+    stroke: #111;
+
+    stroke-width: 10px;
+
+    line-height:.9;
+
+    letter-spacing:-4px;
+
+    font-weight:900;
+
+}
+
+.hero h2{
+
+    font-size:70px;
+
+    color: #ff004d;
+
+    line-height:.9;
+
+    letter-spacing:-4px;
+
+    font-weight:900;
+
+}
+
+
+.hero p{
+
+    margin-top:30px;
+
+    font-size:22px;
+
+    color:#666;
+
+}
+
+
+/* ------------------------- */
+/* SECTIONS */
+/* ------------------------- */
+
+.content{
+
+    width:min(1800px,90vw);
+
+    margin:18px auto;
+
+}
+
+
+.section-title{
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    margin-bottom:40px;
+
+    color:#999;
+
+}
+
+
+/* ------------------------- */
+/* IMAGES */
+/* ------------------------- */
+
+.content img{
+
+    width:100%;
+
+    display:block;
+
+    border-radius:16px;
+
+    box-shadow:
+
+    0 20px 70px rgba(0,0,0,.08);
+
+    transition:.5s;
+
+}
+
+
+.content img:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+/* ------------------------- */
+/* FOOTER */
+/* ------------------------- */
+
+.footer{
+
+    padding:220px 8vw;
+
+}
+
+
+.footer h2{
+
+    font-size:clamp(55px,8vw,120px);
+
+    line-height:.9;
+
+    letter-spacing:-4px;
+
+}
+
+
+.footer p{
+
+    margin-top:30px;
+
+    font-size:22px;
+
+    color:#666;
+
+}
+
+
+/* ------------------------- */
+/* SCROLL ANIMATION */
+/* ------------------------- */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:1s;
+
+}
+
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/* ------------------------- */
+/* SCROLL BAR */
+/* ------------------------- */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#111;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+
+}
+
+
+/* ------------------------- */
+/* MOBILE */
+/* ------------------------- */
+
+@media(max-width:900px){
+
+nav{
+
+padding:24px;
+
+}
+
+nav ul{
+
+display:none;
+
+}
+
+.hero h1{
+
+letter-spacing:-2px;
+
+}
+
+.content{
+
+margin:100px auto;
+
+}
+
+.footer{
+
+padding:120px 24px;
+
+}
+
+}
